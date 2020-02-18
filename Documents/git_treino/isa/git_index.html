@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Prática de Git</title>
+
+	<style type="text/css">
+		
+		body {
+			font-family: Helvetica;
+			color: #222222;
+			font-weight: lighter;
+			margin-top: 150px;
+			margin-left: 150px;
+		}
+
+		h1 {
+			font-weight: lighter;
+		}
+
+		.code {
+			font-family: Roboto Slab;
+			background-color: lightgray;
+			padding: 1px;
+			font-size: 13px; 
+		}
+
+	</style>
+	
+</head>
+
+<body>
+
+<h1>O que é o Git?</h1>
+<p>O <span class="code">Git</span> é um sistema de controle de versões, ou VCS (<i>Version Control System</i>).</p>	
+
+<h1>Git Básico: Criando um repositório</h1>
+<p>1. <span class="code">$ cd + nome do local</span> // localizar a pasta</p>
+<p>2. <span class="code">$ ls</span> // abre o local</p>
+<p>3. <span class="code">$ git init</span> // inicia o Git, cria o repositório</p>
+<p>4. <span class="code">$ git status</span> // mostra o status</p>
+<p>5. <span class="code">$ git add</span> // add o arquivo</p>
+
+<h1>Git Básico: Comitando pela primeira vez</h1>
+<p>1. <span class="code">$ git status</span> // depois que o arquivo foi adicionado, verificamos o status</p>
+<p>2. <span class="code">$ git commit -m "Mensagem descritiva"</span> // comando para comitar alteração (check point)</p>
+<p>3. <span class="code">$ git status</span> // para verificar se ainda há algo para ser comitado</p>
+
+<h1>Git Básico: Comitando modificações</h1>
+<p>1. <span class="code">$ git status</span> // para verificar se a alteração já foi registrada</p>
+<p>2. <span class="code">$ git add</span> // para selecionar o file que será comitado</p>
+<p>3. <span class="code">$ git commit -m "Mensagem descritiva"</span> // comitando alteração</p>
+<p>4. <span class="code">$ git status</span> // para verificação</p>
+
+<h1>Git Básico: Exibindo histórico</h1>
+<p><span class="code">$ git log</span> // para exibir o histórico </p>
+<p><span class="code">$ git log --oneline</span> // para exibir o histórico resumido. Você pode utilizar --graph para a descrição completa dos commits</p>
+<p><span class="code">$ git log --pretty="format: %an: %s %cD"</span> // para exibir o histórico de forma personalizada, confira em <a href="http://devhints.io/git-log-format">devhints.io/git-log-format</a></p>
+<p><span class="code">$ git log -p</span> // para exibir o histórico detalhado</p>
+
+<h1>Git Básico: Configurações de usuário</h1>
+<p><span class="code">$ git config --local ou --global</span> // para definir em que extensão você deseja acessar as configs</p>
+<p><span class="code">$ git config --local user.name "Nome que você quer definir"</span> // para definir o nome do usuário</p>
+<p><span class="code">$ git config --locar user.email "example@123.com.br"</span> // para definir o e-mail do usuário</p>
+<p><span class="code">$ git config user.name</span> // exibe o nome do usuário</p>
+<p><span class="code">$ git config user.email</span> // exibe o e-mail do usuário!</p>
+
+
+</body>
+
+</html>
